@@ -6,27 +6,27 @@
 ;
 .ORG 0
 .EQU STARTADDS = 0x0300		//location to store 200 numbers
-.EQU LOCATION7 = 0x0500		//location to store numbers divisable by 7	
-.EQU LOCATION3 = 0x0600		//location to store numbers divisable by 3
-.EQU LOCATIONB = 0x0700		//location to store numbers divisable by both 7 and 3
-.EQU LOCATIONN = 0x0800		//location to store numbers not divisable by 3 nor 7
+.EQU LOCATION7 = 0x0500		//location to store numbers divisible  by 7	
+.EQU LOCATION3 = 0x0600		//location to store numbers divisible  by 3
+.EQU LOCATIONB = 0x0700		//location to store numbers divisible  by both 7 and 3
+.EQU LOCATIONN = 0x0800		//location to store numbers not divisible  by 3 nor 7
 
 	START:
 		//Loading the location for each case 
 		LDI		XL, LOW(STARTADDS)	//pointer X stores 200 numbers
 		LDI		XH, HIGH(STARTADDS)	//
 	
-		LDI		YH, HIGH(LOCATION7)	//pointer Y holds values divisable by 7
+		LDI		YH, HIGH(LOCATION7)	//pointer Y holds values divisible  by 7
 		LDI		YL, LOW(LOCATION7)	//
 		LDI		R22, LOW(LOCATION7)	//loading the lower bit into memory
 
-		LDI		ZL, LOW(LOCATION3)	//pointer Z holds values divisable by 3
+		LDI		ZL, LOW(LOCATION3)	//pointer Z holds values divisible  by 3
 		LDI		ZH, HIGH(LOCATION3)	//
 		LDI		R23, LOW(LOCATION3)	//loading the lower bit into memory
 
 		LDI		R16, 26				//R16 holds the value 26 in hex
-		LDI		R17, 4				//R17 holds the value 4 to find numbers divisable ny 7
-		LDI		R18, 1				//R18 holds the value 1 to find numbers divisable by 3
+		LDI		R17, 4				//R17 holds the value 4 to find numbers divisible  ny 7
+		LDI		R18, 1				//R18 holds the value 1 to find numbers divisible  by 3
 		
 		//clearing registers to make sure they hold no value
 		CLR R1
@@ -54,7 +54,7 @@
 			CPI		R18, 3	//compare R18 with 3
 			BREQ	DIVBY3	//if R18 = 3 then go to branch DIVBY3
 			RJMP	DIVBYNONE	//Unconditional jump to branch DIVBYBOTH
-				//loop to calculate numbers divisable both by 7 and 3
+				//loop to calculate numbers divisible  both by 7 and 3
 				DIVBYBOTH:
 					LDI		R18, 0				
 					MOV		YL, R24		
@@ -69,7 +69,7 @@
 					INC		R16	
 					RJMP	LOAD
 
-				//loop to calculate number divisable by 7
+				//loop to calculate number divisable  by 7
 				DIVBY7:
 					LDI		R17, 0					
 					CPI		R18, 3				
