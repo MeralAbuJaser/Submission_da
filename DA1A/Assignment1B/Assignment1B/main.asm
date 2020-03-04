@@ -2,7 +2,7 @@
 ; Assignment 1B.asm
 ;
 ; Created: 3/3/2020 9:27:03 AM
-; Author : Meral
+; Author : Meral Abu-Jaser
 ;
 .ORG 0
 .EQU STARTADDS = 0x0300		//location to store 200 numbers
