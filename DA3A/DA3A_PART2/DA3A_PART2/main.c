@@ -50,20 +50,16 @@ int main(void){
 
 	while (1){
 		if(counter > 61){
-		_delay_ms(500);
 		itoa(rand(), char_num, 10); //convert integer to string
 		float_num = rand()*0.15;
-		snprintf(char_float,sizeof(char_float),"%f\r\n",float_num);//prints formated output
+		snprintf(char_float,sizeof(char_float),"%f\r\n",float_num);//prints formatted output
 		
 		USART_tx_string("Hello! this is Meral and this is my DA3A task 2 code\n"); //print the string
-		_delay_ms(125); // delay for 125ms
 		USART_tx_string(char_num); //print the int value 
-		_delay_ms(125);
 		USART_tx_string(" \n"); 
-		_delay_ms(125);
 		USART_tx_string(char_float); // print the floating value
 		
-		counter = 0;
+		counter = 0; //reset the counter
 		}
 	}
 }
