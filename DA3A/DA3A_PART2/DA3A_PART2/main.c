@@ -1,3 +1,8 @@
+/*
+Meral Abu-Jaser
+Assignment 3A. Task 2
+*/
+
 #define F_CPU 16000000UL
 #define BAUD 9600
 
