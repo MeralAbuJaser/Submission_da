@@ -1,7 +1,9 @@
 /*
-Meral Abu-Jaser
-Assignment 3A. Task 2
-*/
+ * DA3A_PART1.c
+ *
+ * Created: 4/15/2020 9:41:52 AM
+ * Author : Meral
+ */ 
 
 #define F_CPU 16000000UL
 #define BAUD 9600
@@ -38,17 +40,14 @@ int main(void){
 	char char_float[20]; //buffer for float
 
 	while (1){
-		_delay_ms(500);
+		_delay_ms(1000); //display 1 second 
 		itoa(rand(), char_num, 10); //convert integer to string
 		float_num = rand()*0.15;
-		snprintf(char_float,sizeof(char_float),"%f\r\n",float_num);//prints formated output
+		snprintf(char_float,sizeof(char_float),"%f\r\n",float_num);//prints formatted output
 		
 		USART_tx_string("Hello! this is Meral and this is my DA3A task 1 code\n"); //print the string
-		_delay_ms(125); // delay for 125ms
 		USART_tx_string(char_num); //print the int value 
-		_delay_ms(125);
 		USART_tx_string(" \n"); 
-		_delay_ms(125);
 		USART_tx_string(char_float); // print the floating value
-		}
+	}
 }
