@@ -1,4 +1,5 @@
-Design Assignment 3B: The goal of the assignment is to modify the above codes to do the following: 
+Design Assignment 3B: 
+The goal of the assignment is to modify the above codes to do the following: 
  
 1. Write a C AVR program that will monitor the LM34/35 connected to an Analog pin (PC5 or PC0) to display the temperature in Centigrade (C) and Fahrenheit (F) on the serial terminal every 0.5 sec. 
 Use a timer with interrupt for the 0.1 sec delay and use a counter variable to implement the 0.5 sec delay. 
