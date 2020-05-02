@@ -1,12 +1,7 @@
 Midterm1: UART Interface      Due Date: See Website 
 
- 
-
 Q: Write, simulate, and demonstrate using Atmel Studio 7 a C code 
-
 for the AVR ATMEGA328p microcontroller that performs the following functions: 
-
- 
 
 1. Program the UART Module to interact with the ATmega328/p: 
 
