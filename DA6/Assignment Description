@@ -1,0 +1,11 @@
+Design Assignment 6 
+The goal of the assignment is to 
+ 
+1. Interface the provided MPU-6050 6-DOF IMU Sensor to the ATmega328p using the I2C interface.
+Using the earlier developed code for UART, display the accelerometer and gyro data to the UART Terminal.  
+Visualizing the accelerometer and gyro values using the serial plotter.  
+
+2. Apply complementary filtering* on the sensor data, calculate the smooth/filtered pitch and roll angles and display 
+the filtered values in the graph. 
+ 
+ 
