@@ -1,0 +1,11 @@
+CpE301 - Design Assignment 5     
+ 
+Design Assignment 5 The goal of the assignment is to develop the  following: 
+ 
+1. Using the Multi-function shield, using a custom serial transfer protocol display the temperature 
+sensor value (int only) of LM34/35 on to the seven-segment display.  
+
+2. Using the Multi-function shield, using the SPI protocol display the temperature sensor value (int only) 
+of LM34/35 on to the seven-segment display.  3. Using one-wire interface display the temperature sensor 
+for DS18B20 on the UART terminal.  
+ 
