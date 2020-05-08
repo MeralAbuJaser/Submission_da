@@ -1,0 +1,7 @@
+
+ Design Assignment 4A: The goal of the assignment is to develop the following: 
+ 
+1. Write an AVR C program to control the speed of the DC Motor using a potentiometer connected to PC0. 
+Use an interrupt on a button (PC1/2/3) to stop and start the motor at each click. 
+The minimum speed of the motor should be 0 when pot is at minimum position and at maximum position should be 95% of PWM value. 
+ 
