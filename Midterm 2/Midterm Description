@@ -1,0 +1,11 @@
+Midterm1: Motor Speed Interface     Due Date: See Website 
+ 
+Q: Write, simulate, and demonstrate using Atmel Studio 7 a C code for the AVR ATMEGA328p microcontroller that performs 
+the following functions: 
+You’ll use the ADC, and PWM/CCP Module of the ATmega328/p to set and determine the speed of the DC Motor.  
+1. Use the motor driver, program the ATMega to drive the geared DC motor in CW and CCW direction for a given PWM.
+2. Using the Potentiometer connected to ADC0, translate the ADC value to PWM value/ speed of the motor. Verify the operation.  
+3. Using the CCP capture pin of PWM1, in mode 1x and 2x determine the speed of the DC Motor for a set ADC Pot value/position. 
+4. Using CCP capture and interrupt (mode 4x), determine the speed of the DC Motor for a set ADC Pot value/position.   
+ 
+ 
